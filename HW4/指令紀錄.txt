@@ -1,7 +1,7 @@
 sudo su seed
 
-cd Labsetup
-cd Labsetup/volumes
+cd Labsetup43
+sudo mv attack.c /home/a0320506/Labsetup43/volumes
 
 $ dcbuild # Alias for: docker-compose build
 $ dcup # Alias for: docker-compose up
@@ -10,9 +10,10 @@ $ dcdown # Alias for: docker-compose down
 $ dockps // Alias for: docker ps --format "{{.ID}} {{.Names}}"
 $ docksh <id> // Alias for: docker exec -it <id> /bin/bash
 
-76c c1c94dde1  seed-attacker
-708 53d449ea1  user1-10.9.0.6
-ce6 7c028f59f  user2-10.9.0.7
-766 f1ad38c90  victim-10.9.0.5
 
-：
+75a 55f1473ec  attacker-ns-10.9.0.153
+a02 fce45a9a5  local-dns-server-10.9.0.53
+1e6 9ba591786  seed-attacker
+f5d 430a2eca0  user-10.9.0.5
+
+： 
